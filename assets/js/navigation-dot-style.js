@@ -6,7 +6,7 @@ function active(...keys){return keys.includes(key())?' is-active':''}
 function render(){
  const t=document.getElementById(TARGET); if(!t)return;
  t.innerHTML=`<header class="s4u-header"><nav class="s4u-nav" aria-label="Primary navigation">
- <a class="s4u-brand" href="index.html" aria-label="screenings4u Workforce Compliance home"><img src="images/logo.png" alt="screenings4u Workforce Compliance"></a>
+ <a class="s4u-brand" href="index.html" aria-label="screenings4u Workforce Compliance home"><img src="images/workforce-non-dot.png" alt="screenings4u Workforce Compliance"></a>
  <button class="s4u-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="s4uPrimary"><span></span></button>
  <div class="s4u-links" id="s4uPrimary">
    <a class="s4u-link${active('platform')}" href="platform.html">Platform</a>
