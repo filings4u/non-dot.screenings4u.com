@@ -1,0 +1,56 @@
+/* Workforce DOT global mobile / SEO layout overrides */
+html,body{overflow-x:clip}img,video,svg,canvas{max-width:100%;height:auto}iframe{max-width:100%}[hidden]{display:none!important}:focus-visible{outline:3px solid rgba(255,107,0,.38);outline-offset:3px}
+.container,.hero-grid,.hero-shell,.demo-hero-grid,.feature-split,.pricing-layout,.contact-layout,.checkout-layout,.legal-layout{min-width:0}
+.comparison-table-shell,.table-scroll,[data-table-scroll]{overflow-x:auto;-webkit-overflow-scrolling:touch}
+@media(max-width:980px){
+  /* Every actual hero visual comes FIRST on mobile; copy follows below it. */
+  body:not([data-page="login"]):not([data-page="legal"]) .hero-grid,
+  body:not([data-page="login"]):not([data-page="legal"]) .hero-shell,
+  .demo-hero-grid{display:flex!important;flex-direction:column!important;gap:0!important}
+  body:not([data-page="login"]):not([data-page="legal"]) .hero-grid>.hero-media,
+  body:not([data-page="login"]):not([data-page="legal"]) .hero-shell>.hero-media,
+  .demo-hero-grid>.demo-hero-media{order:-10!important;width:100%!important;margin:0 0 20px!important}
+  body:not([data-page="login"]):not([data-page="legal"]) .hero-grid>.hero-copy,
+  body:not([data-page="login"]):not([data-page="legal"]) .hero-shell>.hero-copy,
+  .demo-hero-grid>.demo-hero-copy{order:10!important;width:100%!important;margin:0!important}
+  body[data-page="blog"] .hero-grid>.featured-hero-card{order:-10!important;width:100%!important;margin:0 0 20px!important}
+
+  /* Mobile headings are intentionally smaller than desktop. */
+  .hero h1,.page-hero h1,.demo-hero h1,.login-hero h1,.legal-hero h1{font-size:clamp(30px,8vw,38px)!important;line-height:1.04!important;max-width:100%!important}
+  .hero .lead,.page-hero p,.demo-hero p{font-size:15px!important;line-height:1.58!important}
+  .hero,.page-hero,.demo-hero,.login-hero{padding-top:34px!important}
+}
+@media(max-width:700px){
+  .container{width:calc(100% - 32px)!important}
+  .section{padding-left:0!important;padding-right:0!important}
+  .hero h1,.page-hero h1,.demo-hero h1,.login-hero h1,.legal-hero h1{font-size:clamp(29px,8.4vw,34px)!important}
+  .hero-actions,.cta-actions,.form-actions{flex-wrap:wrap!important}
+  .hero-proof,.hero-stats,.metric-grid,.proof-grid,.plan-grid,.price-grid,.resource-agency-grid,.resource-guide-grid,.article-grid,.faq-grid,.contact-card-grid{grid-template-columns:1fr!important}
+  .legal-sidebar{position:static!important}
+}
+
+/* v12 — calmer mobile typography across the full site */
+@media(max-width:980px){
+  main h1{font-size:clamp(30px,6.8vw,36px)!important;line-height:1.05!important}
+  main h2{font-size:clamp(27px,5.8vw,32px)!important;line-height:1.08!important}
+  main h3{font-size:clamp(21px,4.8vw,25px)!important;line-height:1.12!important}
+  .metrics-grid strong,.metric-grid strong,.stats-grid strong,.hero-meta strong,.hero-stats strong{font-size:32px!important;line-height:1!important}
+  .metrics-grid>div,.metric-grid>div,.stats-grid>div{padding:22px 18px!important}
+  .showcase-copy>p,.section-intro p,.hero .lead,.page-hero p,.demo-hero p{font-size:15px!important;line-height:1.55!important}
+}
+@media(max-width:700px){
+  main h1{font-size:29px!important;line-height:1.06!important}
+  main h2{font-size:27px!important;line-height:1.08!important}
+  main h3{font-size:21px!important;line-height:1.12!important}
+  .metrics-grid strong,.metric-grid strong,.stats-grid strong,.hero-meta strong,.hero-stats strong{font-size:29px!important}
+  .metrics-grid>div,.metric-grid>div,.stats-grid>div{padding:18px 14px!important}
+  .metrics-grid span,.metric-grid span,.stats-grid span{font-size:11px!important;line-height:1.4!important;margin-top:6px!important}
+  .showcase-copy h2,.section-intro h2,.directory-intro h2,.security-card h2{font-size:27px!important}
+  .workspace-grid h3,.feature-card h3,.workflow-grid h3,.resource-grid h3{font-size:21px!important}
+}
+@media(max-width:430px){
+  main h1{font-size:28px!important}
+  main h2{font-size:25px!important}
+  main h3{font-size:20px!important}
+  .metrics-grid strong,.metric-grid strong,.stats-grid strong,.hero-meta strong,.hero-stats strong{font-size:27px!important}
+}
