@@ -1,12 +1,5 @@
-# Workforce NON-DOT — rebuilt marketing site
+# Workforce NON-DOT marketing site
 
-This site was rebuilt to use the Workforce DOT visual system while replacing DOT-specific content with current NON-DOT Workforce content.
+This build intentionally uses the exact visual design system copied from the supplied `dot.screenings4u.com` website (same page CSS, navigation/footer styling, card language, spacing, product-frame treatment, typography, breakpoints and responsive behavior), with NON-DOT Workforce SaaS content and the supplied NON-DOT screenshots/logos.
 
-## Live data
-`assets/js/catalog-live.js` loads public marketing-safe plan/service data from Supabase Edge Function `workforce-marketing-catalog`. Static fallbacks are included for SEO and resilience.
-
-## Current plan pricing
-Employer: $85 / $145 / $245 monthly. C/TPA: $125 / $225 / $375 monthly.
-
-## New page architecture
-Home, Platform, Employers, C/TPAs, Services, Testing, Background Screening, Occupational Health, Policies, Pricing, Contact, Login, and refreshed legal pages. Old pricing/blog/order confirmation URLs redirect to current pages.
+The public pricing page is backed by the live `workforce-marketing-catalog` Supabase Edge Function in project `elpbnytpciqnbexiaebp`, with a local fallback matching the current active Workforce plans.

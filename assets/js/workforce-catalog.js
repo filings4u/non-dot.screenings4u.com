@@ -1,0 +1,1 @@
+fetch('https://elpbnytpciqnbexiaebp.supabase.co/functions/v1/workforce-marketing-catalog',{method:'POST',headers:{'Content-Type':'application/json'},body:'{}'}).catch(()=>{});
