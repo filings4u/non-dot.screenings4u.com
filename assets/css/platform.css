@@ -210,3 +210,8 @@ body[data-page="platform"] .hero-media .product-frame{
   body[data-page="platform"] .hero-copy h1{font-size:38px}
   body[data-page="platform"] .hero-copy .lead{font-size:15px}
 }
+
+/* Platform anchored navigation */
+html{scroll-behavior:smooth}
+.platform-anchor-section{scroll-margin-top:118px}
+@media(max-width:980px){.platform-anchor-section{scroll-margin-top:98px}}
