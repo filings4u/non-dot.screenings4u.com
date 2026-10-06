@@ -1,28 +1,27 @@
-SCREENINGS4U WORKFORCE COMPLIANCE MARKETING SITE — V2
+SCREENINGS4U WORKFORCE NON-DOT WEBSITE
 
-Brand reference:
-- Built from the Screenings4u main website visual system.
-- Uses images/logo.png as requested.
-- Uses a 1450px maximum content width.
-- Shared navigation is injected by assets/js/navigation.js.
-- Shared footer is injected by assets/js/footer.js into #siteFooter.
-- Header targets: #desktopNav, #mobileNav, #mobileToggle.
-- Footer target: #siteFooter.
+Public website:
+https://non-dot.screenings4u.com
 
-Recommended deployment:
-workforce.screenings4u.com/        Marketing site
-workforce.screenings4u.com/app/    Authenticated Workforce application
+Management portal:
+https://non-dot-portal.screenings4u.com
 
-Pricing:
-C/TPA: $125 / $225 / $375 monthly
-Employer: $85 / $145 / $245 monthly
-Owner-Operator: $45 / $125 / $225 monthly
+Connected backend:
+Screenings4u Enterprise Supabase project (elpbnytpciqnbexiaebp)
 
-Core product positioning:
-The subscription sells the software. Screenings4u testing services are optional add-on transactions.
+The public website is connected to the NON-DOT Website Management CMS for:
+- Pages and managed page content
+- Pricing and plan amounts
+- URL redirects
+- SEO and social metadata
+- Blog content
+- Contact and demo inquiries
+- NON-DOT subscription checkout and account provisioning
 
-V2.1 adjustments:
-- All pricing plan buttons now route to checkout.html?plan=...
-- Customer portal is https://app.screenings4u.com
-- Added checkout.html
-- Refined button wrapping, CTA spacing, price cards, responsive spacing and checkout layout.
+Customer portals:
+- https://ctpa-non-dot.screenings4u.com
+- https://ctpa-employer-non-dot.screenings4u.com
+- https://ctpa-employee-non-dot.screenings4u.com
+- https://ctpa-driver-non-dot.screenings4u.com
+- https://employer-non-dot.screenings4u.com
+- https://employee-non-dot.screenings4u.com

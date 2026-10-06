@@ -29,7 +29,7 @@
 .confirmation-status{margin-top:20px;font-size:12px;font-weight:700;color:var(--blue)}
 @media(max-width:640px){.confirmation-main{padding:42px 0 64px}.confirmation-card{padding:26px 20px}.confirmation-row{align-items:flex-start}.confirmation-actions{display:grid}.confirmation-actions .btn{width:100%}}
 </style>
-<link href="assets/css/navigation.css?v=nondot1" rel="stylesheet"/><link href="assets/css/footer.css?v=nondot1" rel="stylesheet"/><link href="assets/css/mobile-seo.css?v=nondot1" rel="stylesheet"/><link href="assets/css/dot-clone-theme.css?v=nondot1" rel="stylesheet"/></head>
+<link href="assets/css/navigation.css?v=nondot1" rel="stylesheet"/><link href="assets/css/footer.css?v=nondot1" rel="stylesheet"/><link href="assets/css/mobile-seo.css?v=nondot1" rel="stylesheet"/><link href="assets/css/nondot-theme.css?v=nondot1" rel="stylesheet"/><script defer src="assets/js/nondot-management-runtime.js?v=20261006-1"></script></head>
 <body>
 <div data-site-header="" id="siteHeader"></div>
 <main class="confirmation-main">
@@ -58,7 +58,7 @@
 <script>
 (() => {
   "use strict";
-  const API = "https://wyezpseboxbmkedvbmyx.supabase.co/functions/v1/workforce-checkout-status";
+  const API = "https://elpbnytpciqnbexiaebp.supabase.co/functions/v1/nondot-checkout-status";
   const params = new URLSearchParams(location.search);
   const orderId = params.get("order") || "";
   const tracking = params.get("tracking") || "";
@@ -116,5 +116,5 @@
   run();
 })();
 </script>
-<script defer="" src="assets/js/navigation-dot-style.js?v=nondot1"></script><script defer="" src="assets/js/footer-dot-style.js?v=nondot1"></script></body>
+<script defer="" src="assets/js/navigation-nondot-style.js?v=nondot1"></script><script defer="" src="assets/js/footer-nondot-style.js?v=nondot1"></script></body>
 </html>

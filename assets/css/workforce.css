@@ -107,7 +107,6 @@
 .inner-hero h1{font-size:clamp(45px,5.3vw,72px);line-height:.98;letter-spacing:-.055em;margin:0 0 20px}
 .inner-hero p{color:rgba(255,255,255,.8);font-size:17px;max-width:700px}
 .inner-hero.employer{background:url("../../images/business-services-hero.webp") center/cover no-repeat}
-.inner-hero.owner{background:url("../../images/owner-operator-hero.webp") center/cover no-repeat}
 .inner-hero.ctpa{background:url("../../images/join-collector-network-hero.webp") center/cover no-repeat}
 .inner-hero.platform{background:url("../../images/testing-hero.webp") center/cover no-repeat}
 .info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}

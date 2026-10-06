@@ -1,4 +1,4 @@
-/* Workforce DOT universal navigation — one shared component for every page */
+/* Workforce NON-DOT universal navigation — one shared component for every page */
 #siteHeader{height:98px;position:relative;z-index:2147483000}
 .s4u-header{position:fixed;top:12px;left:0;right:0;width:100%;z-index:2147483000;pointer-events:none;isolation:isolate}
 .s4u-nav{position:relative;z-index:2;pointer-events:auto;width:min(1450px,calc(100% - 40px));height:74px;margin:0 auto;padding:0 18px;display:flex;align-items:center;gap:22px;background:rgba(255,255,255,.97);border:1px solid rgba(201,216,234,.92);border-radius:16px;box-shadow:0 12px 34px rgba(22,55,97,.11);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);overflow:visible}
