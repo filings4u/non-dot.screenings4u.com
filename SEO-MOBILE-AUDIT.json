@@ -1,0 +1,26 @@
+{
+  "generated": "2026-10-07",
+  "public_indexable_pages": 21,
+  "noindex_pages": [
+    "account-creation.html",
+    "blog-post.html",
+    "checkout-success.html",
+    "checkout.html",
+    "ctpa-pricing.html",
+    "employer-pricing.html",
+    "login.html",
+    "order-confirmation.html"
+  ],
+  "improvements": [
+    "DOT-reference mobile CSS applied sitewide",
+    "Canonical URLs on public pages",
+    "Unique title and meta description on public pages",
+    "Open Graph and Twitter metadata",
+    "Organization/WebSite/WebPage JSON-LD",
+    "Responsive forms, tables, grids and tap targets",
+    "16px mobile form fields to prevent iOS zoom",
+    "Image width/height, lazy loading and hero fetch priority",
+    "Updated robots.txt and sitemap.xml",
+    "Hosting security/cache headers"
+  ]
+}

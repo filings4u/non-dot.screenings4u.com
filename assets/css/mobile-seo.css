@@ -54,3 +54,57 @@ html,body{overflow-x:clip}img,video,svg,canvas{max-width:100%;height:auto}iframe
   main h3{font-size:20px!important}
   .metrics-grid strong,.metric-grid strong,.stats-grid strong,.hero-meta strong,.hero-stats strong{font-size:27px!important}
 }
+
+
+/* Workforce NON-DOT sitewide mobile hardening */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{width:100%;max-width:100%;overflow-x:hidden}
+button,a,input,select,textarea{touch-action:manipulation}
+button,.btn,.footer-button,.product-tab,.table-btn,.mini-btn,.download-btn,.mobile-plan-cta,input[type="submit"]{min-height:44px}
+input,select,textarea{max-width:100%}
+img{object-fit:contain}
+
+@media(max-width:980px){
+  #siteHeader{height:88px!important}
+  .container,.site-footer .container{width:calc(100% - 32px)!important;max-width:100%!important}
+  .hero-grid,.hero-shell,.demo-hero-grid,.contact-grid,.contact-layout,.form-layout,.checkout-grid,.pricing-layout,.product-row,.product-row.reverse,.showcase,.showcase.reverse,.resource-bridge-inner,.split-head{grid-template-columns:1fr!important}
+  .hero-media,.demo-hero-media,.row-media,.product-frame,.browser-frame{max-width:100%!important;min-width:0!important}
+  .hero-media img,.row-media img,.product-frame img,.browser-frame img{max-height:none!important;width:100%!important}
+  .feature-grid,.capability-grid,.demo-cap-grid,.quick-grid,.download-grid,.agency-grid,.article-grid,.playbook-grid,.addon-grid,.workspace-grid,.contact-paths,.support-stack,.next-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .footer-cta,.footer-shell{grid-template-columns:1fr!important}
+  .footer-cta-actions{justify-content:flex-start!important;flex-wrap:wrap!important}
+  .footer-links-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .checkout-summary,.pricing-side-nav,.legal-sidebar{position:static!important;top:auto!important}
+  .floating-stack,.floating-price-bar{position:static!important;top:auto!important}
+  .form-grid,.field-grid,.checkout-fields{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+  .full,.field.full,.checkout-fields label.full{grid-column:1/-1!important}
+}
+@media(max-width:700px){
+  #siteHeader{height:78px!important}
+  .container,.site-footer .container{width:calc(100% - 24px)!important}
+  body main{overflow:hidden}
+  .section{padding-top:52px!important;padding-bottom:52px!important}
+  .hero,.page-hero,.demo-hero,.login-hero,.checkout-hero{padding-top:22px!important;padding-bottom:24px!important}
+  .hero-grid,.hero-shell,.demo-hero-grid,.contact-grid,.contact-layout,.form-layout,.checkout-grid,.pricing-layout,.product-row,.showcase,.resource-bridge-inner{gap:20px!important}
+  .feature-grid,.capability-grid,.demo-cap-grid,.quick-grid,.download-grid,.agency-grid,.article-grid,.playbook-grid,.addon-grid,.workspace-grid,.contact-paths,.support-stack,.next-grid,.footer-links-grid,.hero-contact-row,.services-proof{grid-template-columns:1fr!important}
+  .form-grid,.field-grid,.checkout-fields{grid-template-columns:1fr!important}
+  .full,.field.full,.checkout-fields label.full{grid-column:auto!important}
+  input:not([type="checkbox"]):not([type="radio"]),select,textarea{font-size:16px!important;min-height:46px!important}
+  textarea{min-height:140px!important;padding-top:12px!important}
+  .btn,.footer-button,.product-tab,.table-btn,.mini-btn,.download-btn,.mobile-plan-cta{width:100%;justify-content:center}
+  .hero-actions,.demo-hero-actions,.footer-cta-actions,.form-actions{display:grid!important;grid-template-columns:1fr!important;width:100%!important}
+  .hero-proof,.proof-grid,.hero-stats{grid-template-columns:1fr!important}
+  .browser-bar{min-height:36px;height:auto!important;padding:8px 10px!important}
+  .comparison-table-shell,.table-scroll,[data-table-scroll]{margin-inline:-12px;padding-inline:12px}
+  table{max-width:none}
+  .checkout-card,.form-card,.contact-form,.security-card,.side-nav-card{padding-left:18px!important;padding-right:18px!important}
+  .footer-bottom{grid-template-columns:1fr!important;text-align:left!important}
+  .footer-legal-links{justify-content:flex-start!important}
+}
+@media(max-width:430px){
+  .container,.site-footer .container{width:calc(100% - 20px)!important}
+  .section{padding-top:44px!important;padding-bottom:44px!important}
+  main h1{font-size:28px!important}
+  main h2{font-size:25px!important}
+  main h3{font-size:20px!important}
+}
