@@ -23,3 +23,31 @@ button.btn,.btn{
 .btn-primary{border:1px solid var(--orange)!important;background:var(--orange)!important;color:#fff!important;box-shadow:none!important}
 .btn-secondary{border:1px solid #c9d8ea!important;background:#fff!important;color:var(--ink)!important;box-shadow:none!important}
 button.btn:active,.btn:active{box-shadow:none!important;transform:none!important}
+
+
+/* NON-DOT contact adaptations */
+body[data-page="contact"] .hero{
+  padding-top:38px;
+  padding-bottom:46px;
+}
+body[data-page="contact"] .hero-copy h1{
+  max-width:660px;
+}
+body[data-page="contact"] .hero-panel{
+  align-self:stretch;
+}
+body[data-page="contact"] .contact-paths{
+  height:calc(100% - 72px);
+}
+body[data-page="contact"] .contact-paths>a{
+  min-height:88px;
+}
+body[data-page="contact"] .form-layout{
+  align-items:stretch;
+}
+body[data-page="contact"] .contact-form{
+  align-self:stretch;
+}
+@media(max-width:1100px){
+  body[data-page="contact"] .hero{padding-top:28px;padding-bottom:34px}
+}

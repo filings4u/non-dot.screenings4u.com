@@ -28,3 +28,17 @@
 @media(max-width:1180px){.resource-bridge-inner{grid-template-columns:1fr}.resource-bridge-links{grid-template-columns:repeat(3,1fr)}.download-grid,.agency-grid,.article-grid{grid-template-columns:repeat(2,1fr)}.playbook-card{grid-template-columns:1fr}.playbook-card img{height:220px}.split-head{grid-template-columns:1fr;gap:16px}.split-head>p{margin-left:0}}
 @media(max-width:980px){#siteHeader{height:88px}.site-header{top:8px!important}.site-header .nav-wrap{width:calc(100% - 24px);height:70px;border-radius:14px}.brand img{width:240px;height:42px}.nav-toggle{display:flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid var(--line);border-radius:12px;background:#fff;margin-left:auto}.nav-toggle span,.nav-toggle span:before,.nav-toggle span:after{display:block;width:18px;height:2px;background:var(--ink);border-radius:99px;position:relative;content:""}.nav-toggle span:before{position:absolute;top:-6px}.nav-toggle span:after{position:absolute;top:6px}.primary-nav{position:absolute;top:86px;left:12px;right:12px;background:#fff;border:1px solid var(--line);border-radius:18px;box-shadow:0 22px 60px rgba(22,55,97,.14);padding:16px;display:none;flex-direction:column;align-items:stretch;gap:8px}.primary-nav.open{display:flex}.primary-nav details,.primary-nav .dropdown{position:static}.primary-nav .dropdown{margin-top:8px;box-shadow:none}.nav-actions{display:none}.mobile-actions{display:grid;gap:10px;padding-top:6px}.hero-grid{grid-template-columns:1fr}.hero-media .product-frame{min-height:360px}.reference-inner{grid-template-columns:1fr}.footer-shell{grid-template-columns:1fr;gap:36px}.footer-links-grid{grid-template-columns:repeat(2,1fr)}.footer-bottom{grid-template-columns:1fr;justify-items:start}}
 @media(max-width:700px){.resource-bridge{padding:30px 0}.resource-bridge-links{grid-template-columns:1fr}.container,.site-footer .container{width:min(var(--max),calc(100% - 32px))}.hero{padding:46px 0}.hero-copy h1{font-size:38px}.hero-proof,.download-grid,.agency-grid,.article-grid,.faq-grid{grid-template-columns:1fr}.jump-inner{align-items:flex-start;flex-direction:column;padding:18px 0}.playbook-grid{grid-template-columns:1fr}.reference-links{grid-template-columns:1fr}.footer-cta{grid-template-columns:1fr}.footer-cta-actions{flex-wrap:wrap}.footer-links-grid{grid-template-columns:1fr}}
+
+/* NON-DOT resources adaptations */
+body[data-page="resources"] .hero{padding-top:38px;padding-bottom:44px}
+body[data-page="resources"] .hero-grid{align-items:stretch}
+body[data-page="resources"] .hero-copy{display:flex;flex-direction:column;justify-content:space-between}
+body[data-page="resources"] .hero-media{display:flex;align-items:stretch}
+body[data-page="resources"] .hero-media .product-frame{width:100%;height:100%;min-height:430px;display:flex;flex-direction:column}
+body[data-page="resources"] .hero-media .product-frame img{flex:1 1 auto;width:100%;height:100%;object-fit:cover;object-position:top left}
+body[data-page="resources"] .download-btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none}
+@media(max-width:980px){
+  body[data-page="resources"] .hero{padding-top:28px;padding-bottom:30px}
+  body[data-page="resources"] .hero-media .product-frame{min-height:0}
+  body[data-page="resources"] .hero-media .product-frame img{height:auto;object-fit:contain}
+}
