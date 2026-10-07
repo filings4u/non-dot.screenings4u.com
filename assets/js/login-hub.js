@@ -1,18 +1,31 @@
 (()=>{
 'use strict';
+
 const SITE_KEY='0x4AAAAAAE4-F43E-viFsKat';
 const buttons=[...document.querySelectorAll('[data-login-url]')];
 const status=document.getElementById('hubSecurityStatus');
 let verified=false,widget=null;
-const allowedHost=/^(?:[a-z0-9-]+\.)*screenings4u\.com$/i;
+
+const allowed=new Set([
+  'non-dot.screenings4u.com',
+  'ctpa-non-dot.screenings4u.com',
+  'ctpa-employer-non-dot.screenings4u.com',
+  'ctpa-employee-non-dot.screenings4u.com',
+  'ctpa-driver-non-dot.screenings4u.com',
+  'employer-non-dot.screenings4u.com',
+  'employee-non-dot.screenings4u.com',
+  'driver-non-dot.screenings4u.com'
+]);
+
 function safeUrl(raw){
   try{
     const u=new URL(String(raw||''));
-    if(u.protocol!=='https:'||!allowedHost.test(u.hostname))return null;
-    if(u.hostname==='dot.screenings4u.com'&&u.pathname==='/')return u.href;
-    return u.pathname.endsWith('/login.html')?u.href:null;
+    if(u.protocol!=='https:'||!allowed.has(u.hostname))return null;
+    if(u.hostname==='non-dot.screenings4u.com'&&u.pathname==='/')return u.href;
+    return u.pathname==='/login.html'?u.href:null;
   }catch{return null}
 }
+
 function sync(){
   buttons.forEach(btn=>{
     const valid=!!safeUrl(btn.dataset.loginUrl);
@@ -20,21 +33,26 @@ function sync(){
     btn.setAttribute('aria-disabled',String(btn.disabled));
   });
 }
+
 buttons.forEach(btn=>btn.addEventListener('click',()=>{
   if(!verified)return;
   const u=safeUrl(btn.dataset.loginUrl);
   if(u)location.assign(u);
 }));
+
 function mount(){
   if(!window.turnstile||widget!==null)return;
   widget=window.turnstile.render('#turnstileHub',{
     sitekey:SITE_KEY,
-    action:'dot_login_hub',
+    action:'nondot_login_hub',
     theme:'auto',
-    size:'flexible',
+    size:'normal',
+    appearance:'always',
     callback:t=>{
       verified=!!String(t||'');
-      if(status)status.textContent=verified?'Security check complete. Choose your portal.':'Waiting for security verification…';
+      if(status)status.textContent=verified
+        ?'Security check complete. Choose your portal.'
+        :'Waiting for security verification…';
       sync();
     },
     'expired-callback':()=>{
@@ -50,6 +68,11 @@ function mount(){
     }
   });
 }
-(function wait(){if(window.turnstile)mount();else setTimeout(wait,80)})();
+
+(function wait(){
+  if(window.turnstile)mount();
+  else setTimeout(wait,80);
+})();
+
 sync();
 })();
